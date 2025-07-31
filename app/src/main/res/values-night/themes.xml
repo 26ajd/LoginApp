@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.LoginApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- الألوان الأساسية -->
+        <item name="colorPrimary">#1DA1F2</item> <!-- نفس أزرق X -->
+        <item name="colorOnPrimary">#000000</item> <!-- أسود للنصوص على الأزرق -->
+
+        <item name="colorSecondary">#8899A6</item> <!-- رمادي فاتح -->
+        <item name="colorOnSecondary">#000000</item>
+
+        <item name="colorSurface">#15202B</item> <!-- لون أسود أزرق داكن -->
+        <item name="colorOnSurface">#FFFFFF</item> <!-- نص أبيض -->
+
+        <item name="android:colorBackground">@color/colorBackgroundNight</item>
+        <item name="colorOnBackground">#FFFFFF</item>
+
+        <item name="colorPrimaryVariant">#1A91DA</item>
+        <item name="colorError">#E0245E</item> <!-- نفس الأحمر -->
+    </style>
+</resources>

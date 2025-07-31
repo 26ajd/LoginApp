@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- اسم التطبيق -->
+    <string name="app_name">تطبيق تسجيل الدخول</string>
+    
+    <!-- نصوص تسجيل الدخول -->
+    <string name="welcome_title">مرحباً بك</string>
+    <string name="welcome_subtitle">قم بتسجيل الدخول للمتابعة</string>
+    <string name="username_hint">اسم المستخدم</string>
+    <string name="password_hint">كلمة المرور</string>
+    <string name="remember_me">تذكرني</string>
+    <string name="login_button">تسجيل الدخول</string>
+    <string name="forgot_password">نسيت كلمة المرور؟</string>
+    <string name="no_account">ليس لديك حساب؟</string>
+    <string name="sign_up">إنشاء حساب جديد</string>
+    
+    <!-- رسائل النجاح والخطأ -->
+    <string name="login_success">تم تسجيل الدخول بنجاح!</string>
+    <string name="login_failed">اسم المستخدم أو كلمة المرور غير صحيحة</string>
+    <string name="logout_success">تم تسجيل الخروج بنجاح</string>
+    <string name="empty_username">يرجى إدخال اسم المستخدم</string>
+    <string name="empty_password">يرجى إدخال كلمة المرور</string>
+    <string name="invalid_username">اسم المستخدم غير صحيح</string>
+    <string name="password_too_short">كلمة المرور قصيرة جداً</string>
+    
+    <!-- نصوص الصفحة الرئيسية -->
+    <string name="main_title">الصفحة الرئيسية</string>
+    <string name="welcome_message">مرحباً %s!</string>
+    <string name="login_success_message">تم تسجيل الدخول بنجاح</string>
+    <string name="profile">الملف الشخصي</string>
+    <string name="settings">الإعدادات</string>
+    <string name="about">حول التطبيق</string>
+    <string name="logout">تسجيل الخروج</string>
+    
+    <!-- رسائل عامة -->
+    <string name="coming_soon">قريباً...</string>
+    <string name="feature_not_available">هذه الميزة غير متاحة حالياً</string>
+    <string name="app_version">الإصدار 1.0</string>
+    <string name="about_message">حول التطبيق - الإصدار 1.0</string>
+    <string name="profile_message">سيتم فتح الملف الشخصي</string>
+    <string name="settings_message">سيتم فتح الإعدادات</string>
+    <string name="forgot_password_message">سيتم إرسال رابط إعادة تعيين كلمة المرور إلى بريدك الإلكتروني</string>
+    <string name="sign_up_message">سيتم فتح صفحة إنشاء حساب جديد</string>
+    
+    <!-- نصوص التحقق -->
+    <string name="validation_username_required">يرجى إدخال اسم المستخدم</string>
+    <string name="validation_username_too_short">اسم المستخدم يجب أن يكون 3 أحرف على الأقل</string>
+    <string name="validation_username_too_long">اسم المستخدم يجب أن يكون أقل من 20 حرف</string>
+    <string name="validation_username_invalid_chars">اسم المستخدم يجب أن يحتوي على أحرف وأرقام فقط</string>
+    <string name="validation_password_required">يرجى إدخال كلمة المرور</string>
+    <string name="validation_password_too_short">كلمة المرور يجب أن تكون 6 أحرف على الأقل</string>
+    <string name="validation_password_too_long">كلمة المرور طويلة جداً</string>
+    <string name="validation_password_no_uppercase">كلمة المرور يجب أن تحتوي على حرف كبير واحد على الأقل</string>
+    <string name="validation_password_no_lowercase">كلمة المرور يجب أن تحتوي على حرف صغير واحد على الأقل</string>
+    <string name="validation_password_no_digit">كلمة المرور يجب أن تحتوي على رقم واحد على الأقل</string>
+</resources>
+

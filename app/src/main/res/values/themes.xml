@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.LoginApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- الألوان الأساسية -->
+        <item name="colorPrimary">#1DA1F2</item> <!-- أزرق منصة X -->
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <item name="colorSecondary">#657786</item> <!-- رمادي أزرق -->
+        <item name="colorOnSecondary">#FFFFFF</item>
+
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#14171A</item> <!-- أسود ناعم -->
+
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="colorOnBackground">#14171A</item>
+
+        <item name="colorPrimaryVariant">#1A91DA</item>
+        <item name="colorError">#E0245E</item> <!-- أحمر التنبيه -->
+    </style>
+</resources>

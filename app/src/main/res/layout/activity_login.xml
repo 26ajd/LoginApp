@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <!-- شعار التطبيق -->
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/ic_app_logo"
+        android:contentDescription="شعار التطبيق" />
+
+    <!-- عنوان الترحيب -->
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="مرحباً بك"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_text"
+        android:layout_marginBottom="8dp" />
+
+    <!-- نص فرعي -->
+    <TextView
+        android:id="@+id/tv_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="قم بتسجيل الدخول للمتابعة"
+        android:textSize="16sp"
+        android:textColor="@color/secondary_text"
+        android:layout_marginBottom="32dp" />
+
+    <!-- بطاقة تسجيل الدخول -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        android:layout_marginBottom="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- حقل اسم المستخدم -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:boxStrokeColor="@color/primary_color"
+                app:hintTextColor="@color/primary_color"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="اسم المستخدم"
+                    android:inputType="text"
+                    android:drawableStart="@drawable/ic_person"
+                    android:drawablePadding="12dp"
+                    android:textDirection="rtl"
+                    android:textAlignment="viewStart" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- حقل كلمة المرور -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:boxStrokeColor="@color/primary_color"
+                app:hintTextColor="@color/primary_color"
+                app:endIconMode="password_toggle"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="كلمة المرور"
+                    android:inputType="textPassword"
+                    android:drawableStart="@drawable/ic_lock"
+                    android:drawablePadding="12dp"
+                    android:textDirection="rtl"
+                    android:textAlignment="viewStart" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- خانة اختيار "تذكرني" -->
+            <CheckBox
+                android:id="@+id/cb_remember_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تذكرني"
+                android:textColor="@color/secondary_text"
+                android:layout_marginBottom="24dp"
+                android:buttonTint="@color/primary_color" />
+
+            <!-- زر تسجيل الدخول -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="تسجيل الدخول"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="@color/primary_color"
+                app:cornerRadius="28dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- رابط نسيت كلمة المرور -->
+            <TextView
+                android:id="@+id/tv_forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="نسيت كلمة المرور؟"
+                android:textColor="@color/primary_color"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?android:attr/selectableItemBackground" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- رابط إنشاء حساب جديد -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ليس لديك حساب؟ "
+            android:textColor="@color/secondary_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="إنشاء حساب جديد"
+            android:textColor="@color/primary_color"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:padding="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground" />
+    </LinearLayout>
+</LinearLayout>
